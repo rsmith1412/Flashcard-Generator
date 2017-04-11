@@ -1,12 +1,11 @@
-//Creating the Basic Card which will be 'clozed' later
+//Dummy array
+var basicCollection = [];
+//Creating the Basic Card 
 var BasicCard = function(front, back) {
     this.front = front;
     this.back = back;
-    //Creating Basic Cards on our own
-    this.createBasic = function() {
-        console.log(front);
-        console.log(back);
-    }
+
+    basicCollection.push(front, back);
 }
 
 //Exporting this constructor to app.js

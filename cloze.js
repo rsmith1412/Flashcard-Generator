@@ -10,11 +10,10 @@ var ClozeCard = function(text, cloze) {
         console.log('ERROR: Cloze-deletion not included in full text.');
         return;
     }
+    else
+        console.log("Full text: " + text);
+        console.log("Cloze: " + cloze);
 }
-//Testing constructor
-var firstPres = new ClozeCard("George Washington was our first President.", "Tom Ford");
-console.log(firstPres.fullText);
-console.log(firstPres.cloze);
-console.log(firstPres.partial);
+
 //Export ClozeCard constructor to app.js
 module.exports = ClozeCard;
